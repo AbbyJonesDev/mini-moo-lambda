@@ -1,0 +1,30 @@
+{
+    "name": "mini-moo-ccaas-node",
+    "description": "Node lambdas Call Center",
+    "version": "0.0.1",
+    "private": true,
+    "devDependencies": {
+        "axios-mock-adapter": "1.14.1",
+        "babel-core": "6.26.0",
+        "babel-loader": "7.1.4",
+        "babel-preset-env": "1.6.1",
+        "eslint": "^4.18.1",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-import-resolver-node": "0.3.2",
+        "eslint-plugin-import": "2.9.0",
+        "jest": "^22.4.2",
+        "uglifyjs-webpack-plugin": "1.2.3",
+        "webpack": "3.11.0"
+    },
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "lint": "eslint --ext .js src --format node_modules/eslint-friendly-formatter",
+        "lint:fix": "yarn lint --fix",
+        "build": "webpack --config webpack.config.js"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "soap": "^0.23.0"
+    }
+}

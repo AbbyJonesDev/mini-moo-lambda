@@ -1,0 +1,10 @@
+*.iml
+.idea/
+.DS_store
+
+node_modules/
+yarn-error.log
+lambda-payloads.json
+
+dist
+coverage
